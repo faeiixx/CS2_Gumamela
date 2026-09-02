@@ -16,10 +16,11 @@ This program calculates the distance between two points using a math library.
 - y2
 
 ## Sample Output
-Enter x1:
-Enter x2:
-Enter y1:
-Enter y2:
+Enter x1: 6
+Enter x2: 7
+Enter y1: 2
+Enter y2: 3
+The distance between the two points are : 1.41
 
 ## Author
 Name: Faizah Fae Keiandra Hermoso
