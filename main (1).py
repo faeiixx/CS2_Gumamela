@@ -1,0 +1,53 @@
+#Modular Calculator
+
+def add_numbers(num1, num2):
+    return num1 + num2
+    
+def subtract_numbers(num1, num2):
+    return num1 - num2
+    
+def multiply_numbers(num1, num2):
+    return num1 * num2
+    
+def divide_numbers(num1, num2):
+    if num2 == 0:
+        return None
+    return num1/num2
+    
+#Get input from the user
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+#Display operation choices
+print("\nChoose operation: ")
+print("1 - Addition")
+print("2 - Subtraction")
+print("3 - Multiplication")
+print("4 - Division")
+
+choice = input("Enter choice: ")
+
+#Perform the selected operation
+if choice == "1":
+    result = add_numbers(num1, num2)
+    print("\nResult:", result)
+
+elif choice == "2":
+    result = subtract_numbers(num1, num2)
+    print("\nResult:", result)
+    
+elif choice == "3":
+    result = multiply_numbers(num1, num2)
+    print("\nResult", result)
+    
+elif choice == "4":
+    result = divide_numbers(num1, num2)
+    
+    if result is None:
+        print("\nCannot be divided by zero")
+    else:
+        print("\nResult:", result)
+
+else:
+    print("\nWala ngani sa choices")
+    
